@@ -468,7 +468,7 @@
 		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
 
-		"command"			"quit"
+		"command"			"newquit"
 		"labelText"			"#GameUI_GameMenu_Quit"
 		
 		"if_inmenu"

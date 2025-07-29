@@ -125,7 +125,6 @@
 		}
 	}
 	
-	
 	"listpanel_items"
 	{
 		"ControlName"		"PanelListPanel"
@@ -168,8 +167,8 @@
 	{
 		"ControlName"		"CTFButton"
 		"fieldName"			"PreviousPageButton"
-		"xpos"				"200"
-		"ypos"				"292"
+		"xpos"				"108"
+		"ypos"				"279"
 		"zpos"				"20"
 		"wide"				"25"
 		"tall"				"25"
@@ -191,8 +190,8 @@
 	{
 		"ControlName"		"CTFButton"
 		"fieldName"			"NextPageButton"
-		"xpos"				"325"
-		"ypos"				"292"
+		"xpos"				"134"
+		"ypos"				"279"
 		"zpos"				"20"
 		"wide"				"25"
 		"tall"				"25"
@@ -216,12 +215,12 @@
 		"fieldName"		"CountLabel"
 		"font"			"HudFontSmallBold"
 		"labelText"		"%curpage%/%numpages%"
-		"textAlignment"	"center"
-		"xpos"			"350"
-		"ypos"			"297"
+		"textAlignment"	"west"
+		"xpos"			"160"
+		"ypos"			"279"
 		"zpos"			"1"
 		"wide"			"200"
-		"tall"			"15"
+		"tall"			"25"
 		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"1"
