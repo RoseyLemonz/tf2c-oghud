@@ -25,7 +25,7 @@
 		"tall"				"f0"
 		"visible"			"0"
 		"enabled"			"1"
-		"image"				"../console/background03_widescreen"
+		"image"				"../console/background02_widescreen"
 		"alpha"				"255"
 		"scaleImage"		"1"
 	}
@@ -34,11 +34,11 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"LogoContainer"
-		"xpos"				"40"
-		"ypos"				"120"
+		"xpos"				"20"
+		"ypos"				"140"
 		"zpos"				"0"
 		"wide"				"o2.0"
-		"tall"				"140"
+		"tall"				"130"
 
 		"Logo"
 		{
@@ -108,74 +108,57 @@
 	
 	"ResumeButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"ResumeButton"
 		"xpos"			"25"
-		"ypos"			"200"
+		"ypos"			"220"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"			"gamemenucommand ResumeGame"
 		"labelText"			"#GameUI_GameMenu_ResumeGame"
 		
 		"if_inlevel"
 		{
 			"visible"		"1"
-			"default"		"1"
 		}
 	}
 	
 	"DisconnectButton"
 	{
 		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"fieldName"		"DisconnectButton"
 		"xpos"			"25"
-		"ypos"			"215"
+		"ypos"			"235"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"gamemenucommand Disconnect"
 		"labelText"				"#GameUI_GameMenu_Disconnect"
 		"if_inlevel"
@@ -187,33 +170,25 @@
 	"VoteButton"
 	{
 		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"fieldName"		"VoteButton"
 		"xpos"			"25"
-		"ypos"			"230"
+		"ypos"			"250"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"callvote"
 		"labelText"				"#TF_Menu_Vote"
 		
@@ -226,33 +201,25 @@
 	"MuteButton"
 	{
 		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"fieldName"		"MuteButton"
 		"xpos"			"25"
-		"ypos"			"245"
+		"ypos"			"265"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"0"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"gamemenucommand openplayerlistdialog"
 		"labelText"				"#TF_Menu_Mute"
 		
@@ -264,313 +231,297 @@
 	
 	"ServerBrowserButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"ServerBrowserButton"
 		"xpos"			"25"
-		"ypos"			"260"
+		"ypos"			"280"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"gamemenucommand OpenServerBrowser"
 		"labelText"				"#GameUI_GameMenu_FindServers"
 		
 		"if_inmenu"
 		{
-			"ypos"			"200"
+			"ypos"			"220"
 		}
 	}
 	
 	"MultiplayerGameButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"MultiplayerGameButton"
 		"xpos"			"25"
-		"ypos"			"275"
+		"ypos"			"295"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"gamemenucommand OpenCreateMultiplayerGameDialog"
 		"labelText"			"#TF_Menu_CreateServer"
 		
 		"if_inmenu"
 		{
-			"ypos"			"215"
+			"ypos"			"235"
 		}
 	}
 	
 	"LoadoutButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"LoadoutButton"
 		"xpos"			"25"
-		"ypos"			"290"
+		"ypos"			"310"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"newloadout"
 		"labelText"			"#TF_Menu_Loadout"
 		
 		"if_inmenu"
 		{
-			"ypos"			"230"
+			"ypos"			"250"
 		}
 	}
 	
 	"AchievementsButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"AchievementsButton"
 		"xpos"			"25"
-		"ypos"			"305"
+		"ypos"			"325"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"newachievement"
 		"labelText"			"#TF_Menu_Achievements"
 		
 		"if_inmenu"
 		{
-			"ypos"			"245"
+			"ypos"			"265"
 		}
 	}
 	
 	"StatsButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"StatsButton"
 		"xpos"			"25"
-		"ypos"			"320"
+		"ypos"			"340"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"			"newstats"
 		"labelText"			"#TF_Menu_Stats"
 		
 		"if_inmenu"
 		{
-			"ypos"			"260"
+			"ypos"			"280"
 		}
 	}
 	
 	"OptionsDialogButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"OptionsDialogButton"
 		"xpos"			"25"
-		"ypos"			"335"
+		"ypos"			"355"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"gamemenucommand openoptionsdialog"
 		"labelText"			"#GameUI_GameMenu_Options"
 		
 		"if_inmenu"
 		{
-			"ypos"			"275"
+			"ypos"			"295"
 		}
 	}
 	
 	"OptionsAdvButton"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"ControlName"	"Button"
+		"fieldName"		"OptionsAdvButton"
 		"xpos"			"25"
-		"ypos"			"350"
+		"ypos"			"370"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"newoptionsdialog"
 		"labelText"			"Advanced Options"
 		
 		"if_inmenu"
 		{
-			"ypos"			"290"
+			"ypos"			"310"
 		}
 	}
 	
 	"QuitButton"
 	{
 		"ControlName"	"CExImageButton"
-		"fieldName"		"SubButton"
+		"fieldName"		"QuitButton"
 		"xpos"			"25"
-		"ypos"			"365"
+		"ypos"			"385"
 		"wide"			"250"
 		"tall"			"9"
 		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"textinsetx"	"25"
-		"use_proportional_insets" "1"
 		"font"			"ItemFontNameSmallest"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
+		"use_proportional_insets"	"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"sound_armed"		"UI/buttonrollover.wav"
 		"paintbackground"	"0"
 		
 		"defaultFgColor_override" "255 255 255 255"
-		"armedFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
-		
-		"image_drawcolor"	"117 107 94 255"
-		"image_armedcolor"	"235 226 202 255"
-		
+
 		"command"				"newquit"
 		"labelText"			"#GameUI_GameMenu_Quit"
 		
 		"if_inmenu"
 		{
-			"ypos"			"305"
+			"ypos"			"325"
+		}
+	}
+
+	"VersionLabel"
+	{
+		"ControlName"		"Label"
+		"fieldName"			"VersionLabel"
+		"xpos"				"r168"
+		"ypos"				"r14"
+		"zpos"				"5"
+		"wide"				"160"
+		"tall"				"10"
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"0"
+		"enabled"			"1"
+		"labelText"			"#TF_Menu_Version"
+		"textAlignment"		"east"
+		"fgcolor_override"	"Gray"
+		"font"				"DefaultSmallDropShadow"
+
+		"if_inmenu"
+		{
+			"visible"			"1"
+		}
+	}
+
+	"HUDVersionLabel"
+	{
+		"ControlName"		"Label"
+		"fieldName"			"HUDVersionLabel"
+		"xpos"				"r168"
+		"ypos"				"r24"
+		"zpos"				"5"
+		"wide"				"160"
+		"tall"				"10"
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"0"
+		"enabled"			"1"
+		"labelText"			"HUD Version: 1.0.0"
+		"textAlignment"		"east"
+		"fgcolor_override"	"Gray"
+		"font"				"DefaultSmallDropShadow"
+
+		"if_inmenu"
+		{
+			"visible"			"1"
 		}
 	}
 }

@@ -1,0 +1,14 @@
+"Images"
+{
+	"normal"
+	{
+		"file"	"../console/background01"
+		"file"	"../console/background02"
+	}
+	
+	"widescreen"
+	{
+		"file"	"../console/background01_widescreen"
+		"file"	"../console/background02_widescreen"
+	}
+}
