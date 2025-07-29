@@ -448,7 +448,7 @@
 	
 	"QuitButton"
 	{
-		"ControlName"	"CExImageButton"
+		"ControlName"	"Button"
 		"fieldName"		"QuitButton"
 		"xpos"			"25"
 		"ypos"			"385"
@@ -468,7 +468,7 @@
 		"armedFgColor_override" "104 96 83 255"
 		"depressedFgColor_override" "255 255 255 255"
 
-		"command"				"newquit"
+		"command"			"quit"
 		"labelText"			"#GameUI_GameMenu_Quit"
 		
 		"if_inmenu"

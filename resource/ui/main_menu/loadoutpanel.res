@@ -23,7 +23,7 @@
 			"tall"			"60"
 			"visible"		"1"
 			"enabled"		"1"
-			"border_default"	"blank"
+			"border_default"	""
 			"border_armed"		"LoadoutItemMouseOverBorder"
 			"border_depressed"	"LoadoutItemMouseOverBorder"
 			"border_disabled"	"AdvRoundedButtonDisabled"
@@ -32,7 +32,9 @@
 			"textinsetx"	"20"
 			"textAlignment"	"east"
 			"labelText"		"Change..."
-			
+
+			"hide_name_during_tooltip"	"0"
+
 			"ModelPanel"
 			{
 				"ControlName"		"CItemModelPanel"
@@ -133,8 +135,8 @@
 		"font"				"HudFontSmallestBold"
 		"labelText"			">>"
 		"textAlignment"		"west"
-		"xpos"				"c-300"
-		"ypos"				"104"
+		"xpos"				"c-298"
+		"ypos"				"101"
 		"zpos"				"1"
 		"wide"				"20"
 		"tall"				"15"
@@ -149,8 +151,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"			"ClassLabel"
-		"xpos"				"c-280"
-		"ypos"				"95"
+		"xpos"				"c-276"
+		"ypos"				"92"
 		"zpos"				"2"
 		"wide"				"300"
 		"tall"				"30"
@@ -168,8 +170,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"			"ClassLabelShadow"
-		"xpos"				"c-278"
-		"ypos"				"98"
+		"xpos"				"c-274"
+		"ypos"				"95"
 		"zpos"				"1"
 		"wide"				"300"
 		"tall"				"30"
@@ -180,7 +182,25 @@
 		"labelText"			"%classname%"
 		"textAlignment"		"west"
 		"font"				"TF2CMenuTitleBig"
-		"fgcolor"			"HudBlack"
+		"fgcolor"			"Black"
+	}
+
+	"CurrentlyEquippedLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"CurrentlyEquippedLabel"
+		"font"			"HudFontSmallestBold"
+		"labelText"		"#EditLoadout"
+		"textAlignment"	"center"
+		"xpos"			"cs-0.5"
+		"ypos"			"108"
+		"zpos"			"1"
+		"wide"			"150"
+		"tall"			"15"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 	}
 	
 	"TopLine"
@@ -190,13 +210,29 @@
 		"xpos"				"cs-0.5"
 		"ypos"				"125"
 		"zpos"				"1"
-		"wide"				"616"
+		"wide"				"610"
 		"tall"				"10"
 		"visible"			"1"
 		"enabled"			"1"
 		"image"				"loadout_dotted_line"
 		"tileImage"			"1"
-		"tileVertically"	"0"
+		"tileVertically" 	"0"
+	}	
+
+	"BottomLine"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"			"BottomLine"
+		"xpos"				"cs-0.5"
+		"ypos"				"r80"
+		"zpos"				"1"
+		"wide"				"610"
+		"tall"				"10"
+		"visible"			"1"
+		"enabled"			"1"
+		"image"				"loadout_dotted_line"
+		"tileImage"			"1"
+		"tileVertically" 	"0"
 	}	
 	
 	"classselection"
@@ -527,7 +563,7 @@
 	{
 		"ControlName"		"CAdvTabs"
 		"fieldName"			"teamselection"
-		"xpos"				"c180"
+		"xpos"				"c212"
 		"ypos"				"96"
 		"zpos"				"1"
 		"wide"				"120"
@@ -681,7 +717,7 @@
 		"enabled"		"1"
 
 		"render_texture"	"0"
-		"fov"				"25"
+		"fov"				"30"
 		"allow_rot"			"1"
 				
 		"lights"
@@ -700,11 +736,11 @@
 			"skin"		"0"
 
 			"angles_x" "0"
-			"angles_y" "-195"
+			"angles_y" "170"
 			"angles_z" "0"
 			"origin_x" "430"
-			"origin_y" "40"
-			"origin_z" "-53"
+			"origin_y" "58"
+			"origin_z" "-50"
 			"frame_origin_x"	"0"
 			"frame_origin_y"	"0"
 			"frame_origin_z"	"0"
@@ -770,32 +806,6 @@
 				"activity"	"ACT_MP_STAND_SECONDARY2"
 			}
 		}
-		
-		"customclassdata"
-		{
-			"Scout"
-			{
-				"eyetarget_z" "45"
-				"fov"		"25"
-				"angles_x" "0"
-				"angles_y" "-195"
-				"angles_z" "0"
-				"origin_x" "430"
-				"origin_y" "40"
-				"origin_z" "-50"
-			}
-			"Demoman"
-			{
-				"eyetarget_z" "50"
-				"fov"		"25"
-				"angles_x" "0"
-				"angles_y" "-195"
-				"angles_z" "0"
-				"origin_x" "430"
-				"origin_y" "40"
-				"origin_z" "-50"
-			}
-		}
 	}
 	
 	"weaponsetpanel"
@@ -803,7 +813,7 @@
 		"ControlName"	"CTFItemSetPanel"
 		"fieldName"		"weaponsetpanel"		
 		"xpos"			"c-40"
-		"ypos"			"c-94"
+		"ypos"			"c-102"
 		"zpos"			"2"		
 		"wide"			"300"
 		"tall"			"300"
@@ -817,34 +827,38 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"BackButton"
-		"xpos"			"32"
-		"ypos"			"r42"
+		"xpos"			"c-304"
+		"ypos"			"373"
 		"zpos"			"5"
 		"wide"			"100"
 		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
 		"command"		"vguicancel"		
-		"labelText" 	"#TF_Loadout_Close"
+		"labelText"		"#TF_Back"
 		"textAlignment"	"center"
-		"font"			"TF2CMenuButton"
+		"font"			"HudFontSmallBold"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
 	}
 	
 	"ResetInventoryButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ResetInventoryButton"
-		"xpos"			"r178"
+		"xpos"			"c154"
 		"ypos"			"r42"
 		"zpos"			"5"
-		"wide"			"146"
+		"wide"			"150"
 		"tall"			"25"
 		"visible"		"1"
 		"enabled"		"1"
 		"command"		"resetinventory"		
 		"labelText" 	"#TF_Loadout_ResetInventory"
 		"textAlignment"	"center"
-		"font"			"TF2CMenuButton"
+		"font"			"HudFontSmallBold"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
 	}
 	
 	"FooterLine"
