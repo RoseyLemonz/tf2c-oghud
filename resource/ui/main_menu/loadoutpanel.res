@@ -835,7 +835,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"command"		"vguicancel"		
-		"labelText"		"#TF_Back"
+		"labelText"		"#TF_Close"
 		"textAlignment"	"center"
 		"font"			"HudFontSmallBold"
 		"sound_depressed"	"UI/buttonclick.wav"

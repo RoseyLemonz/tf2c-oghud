@@ -481,8 +481,8 @@
 	{
 		"ControlName"		"Label"
 		"fieldName"			"VersionLabel"
-		"xpos"				"r168"
-		"ypos"				"r14"
+		"xpos"				"r172"
+		"ypos"				"6"
 		"zpos"				"5"
 		"wide"				"160"
 		"tall"				"10"
@@ -505,8 +505,8 @@
 	{
 		"ControlName"		"Label"
 		"fieldName"			"HUDVersionLabel"
-		"xpos"				"r168"
-		"ypos"				"r24"
+		"xpos"				"r172"
+		"ypos"				"16"
 		"zpos"				"5"
 		"wide"				"160"
 		"tall"				"10"

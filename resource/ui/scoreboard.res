@@ -13,7 +13,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"medal_width"		"1"
+		"medal_width"		"20"
 		"avatar_width"		"65"
 		"spacer"			"5"
 		"name_width"		"118"
@@ -23,7 +23,7 @@
 		"score_width"		"30"
 		"ping_width"		"30"
 		"killstreak_width"	"15"
-		"killstreak_image_width" "15"	
+		"killstreak_image_width" "15"
 	}
 	"BlueScoreBG"
 	{
