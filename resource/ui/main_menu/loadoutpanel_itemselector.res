@@ -146,7 +146,7 @@
 
 	"BackButton"
 	{
-		"ControlName"	"CExButton"
+		"ControlName"	"Button"
 		"fieldName"		"BackButton"
 		"xpos"			"1"
 		"ypos"			"r202"
@@ -165,10 +165,10 @@
 
 	"PreviousPageButton"
 	{
-		"ControlName"		"CTFButton"
+		"ControlName"		"Button"
 		"fieldName"			"PreviousPageButton"
-		"xpos"				"108"
-		"ypos"				"279"
+		"xpos"				"106"
+		"ypos"				"278"
 		"zpos"				"20"
 		"wide"				"25"
 		"tall"				"25"
@@ -178,20 +178,17 @@
 		"labelText" 		"<"
 		"textAlignment"		"center"
 		"font"				"TF2CMenuButton"
-		"defaultFgColor_override"		"TanDarker"
-		"armedFgColor_override"			"TanLight"
-		"depressedFgColor_override"		"TanDarker"
-		"border_default"	"MainMenuAdvButtonDefault"
-		"border_armed"		"MainMenuAdvButtonArmed"
-		"border_depressed"	"MainMenuAdvButtonDepressed"
+
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
 	}
 
 	"NextPageButton"
 	{
-		"ControlName"		"CTFButton"
+		"ControlName"		"Button"
 		"fieldName"			"NextPageButton"
 		"xpos"				"134"
-		"ypos"				"279"
+		"ypos"				"278"
 		"zpos"				"20"
 		"wide"				"25"
 		"tall"				"25"
@@ -201,12 +198,9 @@
 		"labelText" 		">"
 		"textAlignment"		"center"
 		"font"				"TF2CMenuButton"
-		"defaultFgColor_override"		"TanDarker"
-		"armedFgColor_override"			"TanLight"
-		"depressedFgColor_override"		"TanDarker"
-		"border_default"	"MainMenuAdvButtonDefault"
-		"border_armed"		"MainMenuAdvButtonArmed"
-		"border_depressed"	"MainMenuAdvButtonDepressed"
+
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
 	}
 	
 	"CountLabel"
@@ -217,7 +211,7 @@
 		"labelText"		"%curpage%/%numpages%"
 		"textAlignment"	"west"
 		"xpos"			"160"
-		"ypos"			"279"
+		"ypos"			"278"
 		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"25"

@@ -825,7 +825,7 @@
 	
 	"BackButton"
 	{
-		"ControlName"	"CExButton"
+		"ControlName"	"Button"
 		"fieldName"		"BackButton"
 		"xpos"			"c-304"
 		"ypos"			"373"
@@ -844,7 +844,7 @@
 	
 	"ResetInventoryButton"
 	{
-		"ControlName"	"CExButton"
+		"ControlName"	"Button"
 		"fieldName"		"ResetInventoryButton"
 		"xpos"			"c154"
 		"ypos"			"r42"
